@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(220, 216, 74);
+  background: radial-gradient(
+    circle,
+    rgba(220, 216, 74, 1) 0%,
+    rgba(73, 81, 231, 1) 89%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 50px rgb(255, 255, 255);
+  width: 400px;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+.judul{
+  background-color: yellow;
+  position: fixed;
+  width: 200px;
+  text-align: center;
+  top: 100px;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+
+.input-login ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 140px;
+  /* background-color: aqua; */
+  flex-direction: column;
+}
+.input-login ul li{
+  list-style-type: none;
+  display: flex;
+}
+input[type=text],
+input[type=password]{
+  width: 250px;
+  height: 30px;
+  padding: 5px 18px;
+  border-radius: 0 10px 10px 0;
+  outline: none;
+  border: 1px solid grey;
+  border-left: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+.input-login ul li label{
+  display: flex;
+  background-color: yellow;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid grey;
+}
+
+.container-btn{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+}
+.container-btn button{
+  width: 250px;
+  height: 30px;
+  background-color: yellow;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 10px;
+  transition: 100ms;
+  font-weight: bold;
+}
+.container-btn .daftar{
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.container-btn button:hover{
+  background-color: rgb(189, 189, 0);
+}
